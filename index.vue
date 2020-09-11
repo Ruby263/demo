@@ -3,7 +3,7 @@
     <ve-bmap :settings="mapSettings" :series="mapSeries" :tooltip="mapTooltip">
     </ve-bmap>
     <br />
-    <el-input v-model="input" placeholder="请输入内容"
+    <el-input v-model="input" placeholder="我修改了提示哦"
       ><el-button @click="submit" slot="append">子按钮</el-button></el-input
     >
   </div>
