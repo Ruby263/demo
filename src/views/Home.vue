@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, computed } from "vue";
+import { defineComponent, getCurrentInstance, computed, provide } from "vue";
 
 import HelloWorld from "/@/components/HelloWorld.vue";
 
@@ -15,6 +15,11 @@ export default defineComponent({
     HelloWorld,
   },
   setup() {
+    // provide/inject测试
+    // 向子组件传递
+    provide("location", "South China");
+    provide("geoLocation", { longtitude: 150, latitude: 65 });
+
     // vue3.0中不再使用this,所以获取路由和store需要通过getCurrentInstance获取上下文来获取
 
     // setup的执行时组件对象还没有创建，此时不能使用this来访问data/computed/methods/props
