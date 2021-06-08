@@ -9,7 +9,7 @@
     Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <!-- inject -->
-  <h2 style="color: orange">{{ test }}</h2>
+  <h2 style="color: orange">这是子组件接受的inject值：{{ test }}</h2>
   <HelloChina />
 </template>
 

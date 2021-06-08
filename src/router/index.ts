@@ -11,6 +11,12 @@ const routes = [
     name: "Setting",
     component: () => import("/@/views/Setting.vue"),
   },
+  // 全屏模板
+  {
+    path: "/large-screen",
+    name: "large-screen",
+    component: () => import("/@/views/large-screen.vue"),
+  },
 ];
 
 export default createRouter({

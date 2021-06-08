@@ -29,7 +29,7 @@
           <a-menu-item key="6">网站</a-menu-item>
           <a-menu-item key="8">服务器</a-menu-item>
         </a-sub-menu>
-        <a-menu-item key="9">
+        <a-menu-item key="9" @click="toLargeScreen">
           <file-outlined />
           <span>购物车</span>
         </a-menu-item>
@@ -109,6 +109,11 @@ export default {
       collapsed: false,
       selectedKeys: ["1"],
     };
+  },
+  methods: {
+    toLargeScreen() {
+      this.$router.push({ name: "large-screen" });
+    },
   },
 };
 </script>
